@@ -1,0 +1,666 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>command_line package &mdash; Command Line 0.1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Command Line
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">command_line package</a><ul>
+<li><a class="reference internal" href="#subpackages">Subpackages</a></li>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-command_line.colorful">command_line.colorful module</a></li>
+<li><a class="reference internal" href="#module-command_line.exceptions">command_line.exceptions module</a></li>
+<li><a class="reference internal" href="#module-command_line.history">command_line.history module</a></li>
+<li><a class="reference internal" href="#module-command_line.shell">command_line.shell module</a></li>
+<li><a class="reference internal" href="#module-command_line.style">command_line.style module</a></li>
+<li><a class="reference internal" href="#module-command_line">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Command Line</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>command_line package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/command_line.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="command-line-package">
+<h1>command_line package<a class="headerlink" href="#command-line-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="command_line.examples.html">command_line.examples package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="command_line.examples.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="command_line.examples.html#module-command_line.examples.example_shell">command_line.examples.example_shell module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="command_line.examples.html#module-command_line.examples">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-command_line.colorful">
+<span id="command-line-colorful-module"></span><h2>command_line.colorful module<a class="headerlink" href="#module-command_line.colorful" title="Permalink to this headline">¶</a></h2>
+<p>Command Line Library Colorful File
+This function depends on the colorama library! Please be careful to upgrade!</p>
+<dl class="py function">
+<dt id="command_line.colorful.background_replace">
+<code class="sig-prename descclassname">command_line.colorful.</code><code class="sig-name descname">background_replace</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">text</span><span class="o">=</span><span class="default_value">'Hello World'</span></em>, <em class="sig-param"><span class="n">color</span><span class="o">=</span><span class="default_value">'red'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#command_line.colorful.background_replace" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div><p>Back quick Settings, for the print function in the Python standard library</p>
+</div></blockquote>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>text</strong> (<em>str</em>) – The Text with no color.</p></li>
+<li><p><strong>color</strong> (<em>str</em>) – Color Name</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>Colored Text</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="command_line.colorful.colorful">
+<code class="sig-prename descclassname">command_line.colorful.</code><code class="sig-name descname">colorful</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">text</span><span class="o">=</span><span class="default_value">'Hello World'</span></em>, <em class="sig-param"><span class="n">fore</span><span class="o">=</span><span class="default_value">'red'</span></em>, <em class="sig-param"><span class="n">back</span><span class="o">=</span><span class="default_value">'black'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#command_line.colorful.colorful" title="Permalink to this definition">¶</a></dt>
+<dd><p>Colorful Text</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>text</strong> (<em>str</em>) – Text with no color</p></li>
+<li><p><strong>fore</strong> (<em>str</em>) – fore color name</p></li>
+<li><p><strong>back</strong> (<em>str</em>) – back color name</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>Colored Text</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="command_line.colorful.foreground_replace">
+<code class="sig-prename descclassname">command_line.colorful.</code><code class="sig-name descname">foreground_replace</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">text</span><span class="o">=</span><span class="default_value">'Hello World'</span></em>, <em class="sig-param"><span class="n">color</span><span class="o">=</span><span class="default_value">'red'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#command_line.colorful.foreground_replace" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fore quick Settings, for the print function in the Python standard library</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>text</strong> (<em>str</em>) – The Text with no color.</p></li>
+<li><p><strong>color</strong> (<em>str</em>) – Color Name</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>Colored Text</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="command_line.colorful.get_back_color">
+<code class="sig-prename descclassname">command_line.colorful.</code><code class="sig-name descname">get_back_color</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">string</span><span class="o">=</span><span class="default_value">'white'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#command_line.colorful.get_back_color" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the back color placeholder or reset placeholder use ‘colorama’ module</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>string</strong> (<em>str</em>) – Case - insensitive color names</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>Back color placeholder( Don’t Print it)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="command_line.colorful.get_back_reset">
+<code class="sig-prename descclassname">command_line.colorful.</code><code class="sig-name descname">get_back_reset</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#command_line.colorful.get_back_reset" title="Permalink to this definition">¶</a></dt>
+<dd><p>get_back_color Reset mode encapsulation</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p></p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>Reset Mode Placeholder</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="command_line.colorful.get_fore_color">
+<code class="sig-prename descclassname">command_line.colorful.</code><code class="sig-name descname">get_fore_color</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">string</span><span class="o">=</span><span class="default_value">'black'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#command_line.colorful.get_fore_color" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the fore color placeholder or reset placeholder use ‘colorama’ module</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>string</strong> (<em>str</em>) – Case - insensitive color names</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>Fore color placeholder( Don’t Print it’)</p>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">command_line</span> <span class="kn">import</span> <span class="n">colorful</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="nb">repr</span><span class="p">(</span><span class="n">colorful</span><span class="o">.</span><span class="n">get_fore_color</span><span class="p">(</span><span class="s2">&quot;red&quot;</span><span class="p">)))</span>
+<span class="go">&#39;\x1b[31m&#39;</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt id="command_line.colorful.get_fore_reset">
+<code class="sig-prename descclassname">command_line.colorful.</code><code class="sig-name descname">get_fore_reset</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#command_line.colorful.get_fore_reset" title="Permalink to this definition">¶</a></dt>
+<dd><p>get_fore_color Reset mode encapsulation</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p></p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>Reset Mode Placeholder</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="module-command_line.exceptions">
+<span id="command-line-exceptions-module"></span><h2>command_line.exceptions module<a class="headerlink" href="#module-command_line.exceptions" title="Permalink to this headline">¶</a></h2>
+<dl class="py exception">
+<dt id="command_line.exceptions.ProgramNeedQuitException">
+<em class="property">exception </em><code class="sig-prename descclassname">command_line.exceptions.</code><code class="sig-name descname">ProgramNeedQuitException</code><a class="headerlink" href="#command_line.exceptions.ProgramNeedQuitException" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#command_line.exceptions.QuitException" title="command_line.exceptions.QuitException"><code class="xref py py-class docutils literal notranslate"><span class="pre">command_line.exceptions.QuitException</span></code></a></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt id="command_line.exceptions.ProgramStautsException">
+<em class="property">exception </em><code class="sig-prename descclassname">command_line.exceptions.</code><code class="sig-name descname">ProgramStautsException</code><a class="headerlink" href="#command_line.exceptions.ProgramStautsException" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseException</span></code></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt id="command_line.exceptions.QuitException">
+<em class="property">exception </em><code class="sig-prename descclassname">command_line.exceptions.</code><code class="sig-name descname">QuitException</code><a class="headerlink" href="#command_line.exceptions.QuitException" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#command_line.exceptions.ProgramStautsException" title="command_line.exceptions.ProgramStautsException"><code class="xref py py-class docutils literal notranslate"><span class="pre">command_line.exceptions.ProgramStautsException</span></code></a></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt id="command_line.exceptions.UserNeedQuitException">
+<em class="property">exception </em><code class="sig-prename descclassname">command_line.exceptions.</code><code class="sig-name descname">UserNeedQuitException</code><a class="headerlink" href="#command_line.exceptions.UserNeedQuitException" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#command_line.exceptions.QuitException" title="command_line.exceptions.QuitException"><code class="xref py py-class docutils literal notranslate"><span class="pre">command_line.exceptions.QuitException</span></code></a></p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-command_line.history">
+<span id="command-line-history-module"></span><h2>command_line.history module<a class="headerlink" href="#module-command_line.history" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="command_line.history.HistoryTable">
+<em class="property">class </em><code class="sig-prename descclassname">command_line.history.</code><code class="sig-name descname">HistoryTable</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">iterable</span><span class="o">=</span><span class="default_value">()</span></em>, <em class="sig-param"><span class="o">/</span></em><span class="sig-paren">)</span><a class="headerlink" href="#command_line.history.HistoryTable" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">list</span></code></p>
+<dl class="py method">
+<dt id="command_line.history.HistoryTable.first">
+<code class="sig-name descname">first</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#command_line.history.HistoryTable.first" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="command_line.history.HistoryTable.get">
+<code class="sig-name descname">get</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pos</span><span class="o">=</span><span class="default_value">0</span></em><span class="sig-paren">)</span><a class="headerlink" href="#command_line.history.HistoryTable.get" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="command_line.history.HistoryTable.last">
+<code class="sig-name descname">last</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#command_line.history.HistoryTable.last" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="command_line.history.HistoryTable.length">
+<code class="sig-name descname">length</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#command_line.history.HistoryTable.length" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-command_line.shell">
+<span id="command-line-shell-module"></span><h2>command_line.shell module<a class="headerlink" href="#module-command_line.shell" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="command_line.shell.BaseShell">
+<em class="property">class </em><code class="sig-prename descclassname">command_line.shell.</code><code class="sig-name descname">BaseShell</code><a class="headerlink" href="#command_line.shell.BaseShell" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py attribute">
+<dt id="command_line.shell.BaseShell.COMMAND_GUIDANCE">
+<code class="sig-name descname">COMMAND_GUIDANCE</code><em class="property"> = '&gt;&gt;&gt;'</em><a class="headerlink" href="#command_line.shell.BaseShell.COMMAND_GUIDANCE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="command_line.shell.BaseShell.IS_ECHO_WELCOME_MESSAGE">
+<code class="sig-name descname">IS_ECHO_WELCOME_MESSAGE</code><em class="property"> = True</em><a class="headerlink" href="#command_line.shell.BaseShell.IS_ECHO_WELCOME_MESSAGE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="command_line.shell.BaseShell.WELCOME_MESSAGE">
+<code class="sig-name descname">WELCOME_MESSAGE</code><em class="property"> = ''</em><a class="headerlink" href="#command_line.shell.BaseShell.WELCOME_MESSAGE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="command_line.shell.BaseShell.can_not_find_error">
+<code class="sig-name descname">can_not_find_error</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#command_line.shell.BaseShell.can_not_find_error" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="command_line.shell.BaseShell.echo">
+<code class="sig-name descname">echo</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="n">sep</span><span class="o">=</span><span class="default_value">','</span></em>, <em class="sig-param"><span class="n">end</span><span class="o">=</span><span class="default_value">'\n'</span></em>, <em class="sig-param"><span class="n">style_obj</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#command_line.shell.BaseShell.echo" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="command_line.shell.BaseShell.get_command">
+<code class="sig-name descname">get_command</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#command_line.shell.BaseShell.get_command" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="command_line.shell.BaseShell.get_guidance">
+<code class="sig-name descname">get_guidance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#command_line.shell.BaseShell.get_guidance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="command_line.shell.BaseShell.get_welcome_message">
+<code class="sig-name descname">get_welcome_message</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#command_line.shell.BaseShell.get_welcome_message" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="command_line.shell.BaseShell.history">
+<code class="sig-name descname">history</code><em class="property"> = []</em><a class="headerlink" href="#command_line.shell.BaseShell.history" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="command_line.shell.BaseShell.input">
+<code class="sig-name descname">input</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">style_obj</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#command_line.shell.BaseShell.input" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="command_line.shell.BaseShell.keyboard_interrupt_action">
+<code class="sig-name descname">keyboard_interrupt_action</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#command_line.shell.BaseShell.keyboard_interrupt_action" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="command_line.shell.BaseShell.other_error_except">
+<code class="sig-name descname">other_error_except</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#command_line.shell.BaseShell.other_error_except" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="command_line.shell.BaseShell.parse">
+<code class="sig-name descname">parse</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">value</span><span class="p">:</span> <span class="n">Optional<span class="p">[</span>str<span class="p">]</span></span> <span class="o">=</span> <span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#command_line.shell.BaseShell.parse" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="command_line.shell.BaseShell.program_need_quit_action">
+<code class="sig-name descname">program_need_quit_action</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#command_line.shell.BaseShell.program_need_quit_action" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="command_line.shell.BaseShell.run">
+<code class="sig-name descname">run</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#command_line.shell.BaseShell.run" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="command_line.shell.BaseShell.set_style">
+<code class="sig-name descname">set_style</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">style_object</span></em><span class="sig-paren">)</span><a class="headerlink" href="#command_line.shell.BaseShell.set_style" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="command_line.shell.BaseShell.user_need_quit_action">
+<code class="sig-name descname">user_need_quit_action</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#command_line.shell.BaseShell.user_need_quit_action" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-command_line.style">
+<span id="command-line-style-module"></span><h2>command_line.style module<a class="headerlink" href="#module-command_line.style" title="Permalink to this headline">¶</a></h2>
+<p>Colorful Style File</p>
+<dl class="py class">
+<dt id="command_line.style.BaseStyle">
+<em class="property">class </em><code class="sig-prename descclassname">command_line.style.</code><code class="sig-name descname">BaseStyle</code><a class="headerlink" href="#command_line.style.BaseStyle" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Base Style Define</p>
+<dl class="py attribute">
+<dt id="command_line.style.BaseStyle.back">
+<code class="sig-name descname">back</code><em class="property"> = ''</em><a class="headerlink" href="#command_line.style.BaseStyle.back" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="command_line.style.BaseStyle.clear">
+<code class="sig-name descname">clear</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#command_line.style.BaseStyle.clear" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="command_line.style.BaseStyle.echo">
+<code class="sig-name descname">echo</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">value</span></em><span class="sig-paren">)</span><a class="headerlink" href="#command_line.style.BaseStyle.echo" title="Permalink to this definition">¶</a></dt>
+<dd><p>Echo Function</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>value</strong> (<em>str</em>) – Data will be print.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="command_line.style.BaseStyle.fore">
+<code class="sig-name descname">fore</code><em class="property"> = ''</em><a class="headerlink" href="#command_line.style.BaseStyle.fore" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="command_line.style.BaseStyle.how_to_clear">
+<code class="sig-name descname">how_to_clear</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#command_line.style.BaseStyle.how_to_clear" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rewritable function!
+Say to the Base Style How to clear all the data</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p></p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="command_line.style.BaseStyle.how_to_input">
+<code class="sig-name descname">how_to_input</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#command_line.style.BaseStyle.how_to_input" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rewritable function!
+Say to the Base Style How to input some data</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p></p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>Input Answer(Includes line breaks at the end of the line)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="command_line.style.BaseStyle.how_to_print">
+<code class="sig-name descname">how_to_print</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">data</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#command_line.style.BaseStyle.how_to_print" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rewritable function!
+Say to the Base Style How to print some data</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>data</strong> (<em>str</em>) – String will be print</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="command_line.style.BaseStyle.input">
+<code class="sig-name descname">input</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#command_line.style.BaseStyle.input" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="command_line.style.BaseStyle.input_stream">
+<code class="sig-name descname">input_stream</code><em class="property"> = &lt;_io.TextIOWrapper name='&lt;stdin&gt;' mode='r' encoding='utf-8'&gt;</em><a class="headerlink" href="#command_line.style.BaseStyle.input_stream" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="command_line.style.BaseStyle.output_stream">
+<code class="sig-name descname">output_stream</code><em class="property"> = &lt;colorama.ansitowin32.StreamWrapper object&gt;</em><a class="headerlink" href="#command_line.style.BaseStyle.output_stream" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="command_line.style.BaseStyle.typewriter">
+<code class="sig-name descname">typewriter</code><em class="property"> = False</em><a class="headerlink" href="#command_line.style.BaseStyle.typewriter" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="command_line.style.BaseStyle.typewriter_inv">
+<code class="sig-name descname">typewriter_inv</code><em class="property"> = 0</em><a class="headerlink" href="#command_line.style.BaseStyle.typewriter_inv" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="command_line.style.BlackRedStyle">
+<em class="property">class </em><code class="sig-prename descclassname">command_line.style.</code><code class="sig-name descname">BlackRedStyle</code><a class="headerlink" href="#command_line.style.BlackRedStyle" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#command_line.style.BaseStyle" title="command_line.style.BaseStyle"><code class="xref py py-class docutils literal notranslate"><span class="pre">command_line.style.BaseStyle</span></code></a></p>
+<p>A Example Style
+Fore is red
+Back is black
+Like a slow typewriter.</p>
+<dl class="py attribute">
+<dt id="command_line.style.BlackRedStyle.back">
+<code class="sig-name descname">back</code><em class="property"> = '\x1b[40m'</em><a class="headerlink" href="#command_line.style.BlackRedStyle.back" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="command_line.style.BlackRedStyle.fore">
+<code class="sig-name descname">fore</code><em class="property"> = '\x1b[31m'</em><a class="headerlink" href="#command_line.style.BlackRedStyle.fore" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="command_line.style.BlackRedStyle.typewriter">
+<code class="sig-name descname">typewriter</code><em class="property"> = True</em><a class="headerlink" href="#command_line.style.BlackRedStyle.typewriter" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="command_line.style.BlackRedStyle.typewriter_inv">
+<code class="sig-name descname">typewriter_inv</code><em class="property"> = 1</em><a class="headerlink" href="#command_line.style.BlackRedStyle.typewriter_inv" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-command_line">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-command_line" title="Permalink to this headline">¶</a></h2>
+<p>Command Line Library
+Copy Right (c) Xie Zheyuan</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Xie Zheyuan.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
